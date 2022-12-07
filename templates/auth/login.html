@@ -1,4 +1,13 @@
+{% extends 'base-page.html' %}
+{% load static %}
 
+{% block title %}
+    Log In
+{% endblock title %}
+
+{% block container %}
+
+<br><br>
 <div class="container">
     <form>
         <div class="row">
@@ -14,5 +23,23 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 col-lg-4 col-md-4 offset-md-4">
+                <div class="quote-form-wrapper">
+                    <label class="form-label">Password</label>
+                    <input type="text" class="form-input" placeholder="Password" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4 col-md-4 offset-md-4">
+                <div class="quote-form-wrapper">
+                    <button type="submit" class="request-quote-btn">Log In</button>
+                </div>
+            </div>
+        </div>
     </form>
 </div>
+<br><br>
+
+{% endblock container %}
